@@ -1,0 +1,49 @@
+﻿@using EntityLayer.Concrete
+@model List<City>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+
+
+<div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Şehirler</h4>
+                   
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th>ID</th>
+                          <th>Şehir Adı</th>
+                          <th>Şehir Nüfusu</th>
+                          <th>Şehir Görseli</th>
+                          <th>İşlemler</th>
+           
+                        </tr>
+                      </thead>
+                      <tbody>
+                       @foreach (var item in Model)
+                      {
+                                               
+                        <tr>
+                          <td>@item.Id</td>
+                          <td>@item.name</td>
+                          <td>@item.population</td>
+                          <td><img src="/cityimage/@item.imageUrl" alt="city" width=50 height=50></td>
+                          <td><a href="/City/DeleteCity/@item.Id" class="btn btn-danger">Sil</a>
+                              <a href="/City/UpdateCity/@item.Id" class="btn btn-success">Düzenle</a>
+                              <a href="/City/CityDetail/@item.Id" class="btn btn-primary">Detay</a></td>
+
+                        </tr>
+               
+                      }
+                      </tbody>
+                    </table>
+                    <br/>
+                    <a href="/City/AddCity/" class="btn btn-primary">Yeni Şehir Ekle</a>
+                  </div>
+                </div>
+              </div>

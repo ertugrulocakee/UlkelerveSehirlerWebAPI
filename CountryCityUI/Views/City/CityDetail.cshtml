@@ -1,0 +1,16 @@
+﻿@model EntityLayer.Concrete.City
+
+@{
+    ViewData["Title"] = "CityDetail";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+<div class="card text-dark bg-light mb-xl-auto" @*style="max-width: 18rem;"*@>
+  <div class="card-header">@Model.name / @Model.Country.name <img src = "/countryimage/@Model.Country.flagImageUrl" width="50" height="50" alt="flag"> </div>
+  <div class="card-body" style="text-align:center">
+    <p class="card-text"><img src = "/cityimage/@Model.imageUrl" width="400" height="200" alt="user"></p>
+  </div>
+  <div class="card-footer text-muted">
+    Nüfus: @Model.population
+  </div>
+</div>
