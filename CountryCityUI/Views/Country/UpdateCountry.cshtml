@@ -1,0 +1,69 @@
+﻿@model CountryCityUI.Models.CountryEditViewModel
+
+
+@{
+    ViewData["Title"] = "UpdateCountry";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+
+@if (ViewBag.Message != null)
+{
+    <script type="text/javascript">
+        window.onload = function () {
+            alert('@ViewBag.Message');
+        };
+    </script>
+}  
+
+<div class="col-md-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Ülke Düzenle</h4>
+                 
+                @using (Html.BeginForm("UpdateCountry","Country",FormMethod.Post,new { enctype = "multipart/form-data" })){
+
+                                    
+                     @Html.HiddenFor(m=>m.id)
+                                    
+                    <div class="form-group">
+                      <label>Ülke adı</label>
+                      @Html.TextBoxFor(m=>m.name,new {@class="form-control"}) 
+                      @Html.ValidationMessageFor(m=>m.name,"",new {@class="text-danger"})
+                    </div>
+                    <div class="form-group">
+                      <label>Ülke nüfusu</label>
+                      @Html.TextBoxFor(m=>m.population,new {@class="form-control"}) 
+                      @Html.ValidationMessageFor(m=>m.population,"",new {@class="text-danger"})
+
+                    </div>
+
+                                   
+                   <div class="form-group">
+                      <label>Ülke başkenti</label>
+                      @Html.TextBoxFor(m=>m.capital,new {@class="form-control"}) 
+                      @Html.ValidationMessageFor(m=>m.capital,"",new {@class="text-danger"})
+
+                    </div>
+                
+                                     
+                    <div class="form-group">
+                      <label>Bayrak Resimini Seç</label>
+                       @Html.TextBoxFor(m => m.flagImage, new { type = "file" })
+                       @Html.ValidationMessageFor(m => m.flagImage,"",new {@class="text-danger"})
+            
+                    </div>
+             
+
+                      <button  class="btn btn-success">Oluştur</button>  
+            
+
+                 }
+
+
+                  </div>
+                </div>
+              </div>
+
+
+

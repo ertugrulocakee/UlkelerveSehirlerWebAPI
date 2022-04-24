@@ -162,7 +162,7 @@ namespace CountryCityUI.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> UpdateCity([FromForm] CityEditViewModel cityEditViewModel)
+        public async Task<IActionResult> UpdateCity(CityEditViewModel cityEditViewModel)
         {
 
             try
