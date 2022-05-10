@@ -1,3 +1,10 @@
 UlkelerveSehirlerWebAPI
 
-Projede api ile arayüzün haberleşmesi kısmı eksiktir. Yakın zamanda proje güncellenecektir.
+Projede api ile arayüzün haberleşmesi kısmında küçük eksiklikler mevcuttur. Yakın zamanda proje güncellenecektir.
+
+Şu ana kadar kullanılmış olan teknolojiler
+
+* ASPNET CORE 5.0 WEBAPI
+* ASPNET CORE EF CORE 5.0 (Code First Yaklaşımı ile)
+* ASPNET CORE MVC 5.0 (Arayüz Katmanı)
+* MSSQL
