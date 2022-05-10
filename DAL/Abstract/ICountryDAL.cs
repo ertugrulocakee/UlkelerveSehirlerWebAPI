@@ -9,5 +9,8 @@ namespace DAL.Abstract
 {
     public interface ICountryDAL : IGenericDAL<Country>
     {
+
+        List<Country> GetAllCity(); 
+
     }
 }

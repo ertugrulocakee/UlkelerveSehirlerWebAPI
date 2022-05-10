@@ -12,6 +12,7 @@ namespace CountriesCitiesAPI.Controllers
     {
 
         CityManager cityManager = new CityManager(new EFCityDAL());
+     
 
         [HttpGet]
         public IActionResult CityList()

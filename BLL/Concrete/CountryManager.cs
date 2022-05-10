@@ -30,6 +30,11 @@ namespace BLL.Concrete
             return countryDAL.GetAll(); 
         }
 
+        public List<Country> TGetAllCities()
+        {
+            return countryDAL.GetAllCity();
+        }
+
         public Country TGetById(int id)
         {
             return countryDAL.GetT(id);
@@ -51,6 +56,6 @@ namespace BLL.Concrete
             countryDAL.Update(t);
         }
 
-  
+    
     }
 }

@@ -1,0 +1,47 @@
+﻿@using EntityLayer.Concrete
+@model Country
+
+
+@{
+    ViewData["Title"] = "CountryCities";
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+
+<div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Şehirler</h4>
+                   
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th>ID</th>
+                          <th>Şehir Adı</th>
+                          <th>Şehir Nüfusu</th>
+                          <th>Şehir Görseli</th>
+                       
+           
+                        </tr>
+                      </thead>
+                      <tbody>
+                       @foreach(var item in Model.Cities)
+                      {
+                                                                        
+                        <tr>
+                          <td>@item.Id</td>
+                          <td>@item.name</td>
+                          <td>@item.population</td>
+                          <td><img src="/cityimage/@item.imageUrl" alt="city" width=50 height=50></td>
+                     
+
+                        </tr>
+               
+                      }
+                      </tbody>
+                    </table>
+                    <br/>
+           
+                  </div>
+                </div>
+              </div>

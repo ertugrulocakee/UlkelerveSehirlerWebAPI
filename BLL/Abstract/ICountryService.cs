@@ -10,5 +10,7 @@ namespace BLL.Abstract
     public interface ICountryService : IGenericService<Country>  
     {
 
+        List<Country> TGetAllCities(); 
+
     }
 }
