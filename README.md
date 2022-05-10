@@ -5,6 +5,6 @@ UlkelerveSehirlerWebAPI
 Şu ana kadar kullanılmış olan teknolojiler
 
 * ASPNET CORE 5.0 WEBAPI
-* ASPNET CORE EF CORE 5.0 (Code First Yaklaşımı ile)
+* EF CORE 5.0 (Code First Yaklaşımı ile)
 * ASPNET CORE MVC 5.0 (Arayüz Katmanı)
 * MSSQL
