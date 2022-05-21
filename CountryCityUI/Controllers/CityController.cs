@@ -132,7 +132,7 @@ namespace CountryCityUI.Controllers
        
 
         [HttpGet]
-        public async Task<IActionResult> UpdateCity(int id)
+        public async Task<IActionResult> CityUpdate(int id)
         {
 
 
@@ -162,7 +162,7 @@ namespace CountryCityUI.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> UpdateCity(CityEditViewModel cityEditViewModel)
+        public async Task<IActionResult> CityUpdate(CityEditViewModel cityEditViewModel)
         {
 
             try

@@ -21,7 +21,7 @@
                   <div class="card-body">
                     <h4 class="card-title">Ülke Düzenle</h4>
                  
-                @using (Html.BeginForm("UpdateCountry","Country",FormMethod.Post,new { enctype = "multipart/form-data" })){
+                @using (Html.BeginForm("CountryUpdate","Country",FormMethod.Post,new { enctype = "multipart/form-data" })){
 
                                     
                      @Html.HiddenFor(m=>m.id)

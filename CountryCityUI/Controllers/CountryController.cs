@@ -109,7 +109,7 @@ namespace CountryCityUI.Controllers
 
 
         [HttpGet]
-        public async Task<IActionResult> UpdateCountry(int id)
+        public async Task<IActionResult> CountryUpdate(int id)
         {
 
 
@@ -137,7 +137,7 @@ namespace CountryCityUI.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> UpdateCountry(CountryEditViewModel countryEditViewModel)
+        public async Task<IActionResult> CountryUpdate(CountryEditViewModel countryEditViewModel)
         {
           
             string[] validFileTypes = { "gif", "jpg", "png" };
