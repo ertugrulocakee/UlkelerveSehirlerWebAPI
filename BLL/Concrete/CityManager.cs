@@ -21,7 +21,7 @@ namespace BLL.Concrete
 
         public List<City> GetCityWithCountry()
         {
-            return cityDAL.CityWithCountry().ToList();
+            return cityDAL.CityWithCountry();
         }
 
         public void TAdd(City t){

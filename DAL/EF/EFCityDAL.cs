@@ -19,7 +19,7 @@ namespace DAL.EF
             using (var c = new Context())
             {
 
-                return c.Cities.Include(x => x.Country).ToList();
+                return  c.Cities.Include(x => x.Country).ToList();
 
             }
 

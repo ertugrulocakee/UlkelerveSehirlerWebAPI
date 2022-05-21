@@ -3,6 +3,8 @@ using DAL.EF;
 using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace CountriesCitiesAPI.Controllers
 {
@@ -15,10 +17,10 @@ namespace CountriesCitiesAPI.Controllers
      
 
         [HttpGet]
-        public IActionResult CityList()
+        public  IActionResult CityList()
         {
 
-            var values = cityManager.TGetAll();
+            var values = cityManager.GetCityWithCountry();
 
 
             if (values == null)
@@ -41,7 +43,7 @@ namespace CountriesCitiesAPI.Controllers
         {
 
 
-            var value = cityManager.TGetById(id);
+            var value = cityManager.GetCityWithCountry().Where(x => x.Id == id).FirstOrDefault();
 
             if (value == null)
             {
