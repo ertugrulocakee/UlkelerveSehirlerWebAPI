@@ -1,6 +1,6 @@
 UlkelerveSehirlerWebAPI
 
-Çalışmada api ile arayüzün haberleşmesi kısmında küçük eksiklikler mevcuttur. Yakın zamanda bu eksiklikler giderilecektir.
+Çalışmada api ile arayüzün haberleşmesi kısmında küçük eksiklikler (güncelleme kısmında) mevcuttur. Yakın zamanda bu eksiklikler giderilecektir.
 
 Şu ana kadar kullanılmış olan teknolojiler
 
