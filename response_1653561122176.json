@@ -1,0 +1,44 @@
+[
+  {
+    "id": 9,
+    "name": "Köln",
+    "population": 1086000,
+    "imageUrl": "af58715d-f529-494e-ac67-8e1dc6bb729f.jpg",
+    "countryID": 8,
+    "country": {
+      "countryID": 8,
+      "name": "Almanya",
+      "population": 1086000,
+      "flagImageUrl": "4aff027b-f3cf-46c0-ac14-0aa77220d4ec.jpg",
+      "capital": "Berlin"
+    }
+  },
+  {
+    "id": 10,
+    "name": "İstanbul",
+    "population": 20000000,
+    "imageUrl": "c63923bd-8257-4e3b-bdf8-3a1b662c9a08.jpg",
+    "countryID": 9,
+    "country": {
+      "countryID": 9,
+      "name": "Türkiye",
+      "population": 84340000,
+      "flagImageUrl": "d0c74707-6243-4d08-a6ac-aba12e2ecbff.png",
+      "capital": "Ankara"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Ankara",
+    "population": 5000000,
+    "imageUrl": "0bb814dc-54b2-4879-99bc-4adde20ceb3b.jpg",
+    "countryID": 9,
+    "country": {
+      "countryID": 9,
+      "name": "Türkiye",
+      "population": 84340000,
+      "flagImageUrl": "d0c74707-6243-4d08-a6ac-aba12e2ecbff.png",
+      "capital": "Ankara"
+    }
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "countryID": 6,
+    "name": "Fransa",
+    "population": 67390000,
+    "flagImageUrl": "2794421b-9a4e-49f0-a8b9-467e532e712a.jpg",
+    "capital": "Paris"
+  },
+  {
+    "countryID": 8,
+    "name": "Almanya",
+    "population": 1086000,
+    "flagImageUrl": "4aff027b-f3cf-46c0-ac14-0aa77220d4ec.jpg",
+    "capital": "Berlin"
+  },
+  {
+    "countryID": 9,
+    "name": "Türkiye",
+    "population": 84340000,
+    "flagImageUrl": "d0c74707-6243-4d08-a6ac-aba12e2ecbff.png",
+    "capital": "Ankara"
+  }
+]
